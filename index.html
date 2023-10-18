@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <link rel="stylesheet" href="style.css">
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | Age calculator app</title>
+</head>
+<body>
+
+  <section class="main">
+    <div class="mainDiv">
+      <div class="inputForm">
+        <form action="" class="form" novalidate>
+          <div class="firstRow">
+            <div class="dayDiv inDiv">
+              <label for="day" class="label1">Day</label>
+              <input type="number" class="day" min="1" max="31" required>
+              <span class="dayError error"></span>
+            </div>
+            
+            <div class="monthDiv inDiv">
+              <label for="month" class="label2">Month</label>
+              <input type="number" class="month" min="1" max="12" required>
+              <span class="monthError error"></span>
+            </div>
+        
+            <div class="yearDiv inDiv">
+              <label for="year" class="label3">Year</label>
+              <input type="number" class="year" max="2023" required>
+              <span class="yearError error"></span>
+            </div>
+          </div>
+          
+          <div class="secRow">
+            <div class="line"></div>
+            <button class="submit"><img src="assets\images\icon-arrow.svg" alt=""></button>
+          </div>
+        </form>
+      </div>
+      <div class="calcInfo">
+        <h2 class="calculatedYear fontSize"><span class="calculatedYearNum">--</span> Years</h2>
+        <h2 class="calculatedMonth fontSize gap"><span class="calculatedMonthNum">--</span> Months</h2>
+        <h2 class="calculatedDay fontSize gap"><span class="calculatedDayNum">--</span> Days</h2>
+      </div>
+    </div>
+  </section>
+
+  
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">Anish</a>.
+  </div>
+
+  <script src="index.js" defer></script>
+</body>
+</html>
